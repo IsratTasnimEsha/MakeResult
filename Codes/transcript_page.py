@@ -11,8 +11,8 @@ def transcript_file(inst, exam, clss, sec, demo, number_of_students, subject_nam
 
         if demo[i][-1]==-1:
 
-            p_name='E:/Programming/Special/MakeResult/Additionals/Roll '+str(i+1)+'.html'
-            pg_name='E:/Programming/Special/MakeResult/Outputs/Roll '+str(i+1)+'.pdf'
+            p_name='Additionals/Roll '+str(i+1)+'.html'
+            pg_name='Outputs/Roll '+str(i+1)+'.pdf'
 
             if os.path.exists(p_name):
                 os.remove(p_name)
@@ -23,7 +23,7 @@ def transcript_file(inst, exam, clss, sec, demo, number_of_students, subject_nam
             
         else:
 
-            page='E:/Programming/Special/MakeResult/Additionals/Roll '+str(demo[i][0])+'.html'
+            page='Additionals/Roll '+str(demo[i][0])+'.html'
 
             f=open(page, 'w')
 
@@ -314,7 +314,7 @@ def transcript_file(inst, exam, clss, sec, demo, number_of_students, subject_nam
 
             f.close()
 
-            page_name='E:/Programming/Special/MakeResult/Outputs/Roll '+str(i+1)+'.pdf'
+            page_name='Outputs/Roll '+str(i+1)+'.pdf'
 
             if os.path.exists(page_name):
                 os.remove(page_name)
@@ -324,8 +324,8 @@ def transcript_file(inst, exam, clss, sec, demo, number_of_students, subject_nam
 
         for i in range(number_of_students, 200):
 
-            p1_name='E:/Programming/Special/MakeResult/Additionals/Roll '+str(i+1)+'.html'
-            pg1_name='E:/Programming/Special/MakeResult/Outputs/Roll '+str(i+1)+'.pdf'
+            p1_name='Additionals/Roll '+str(i+1)+'.html'
+            pg1_name='Outputs/Roll '+str(i+1)+'.pdf'
 
             if os.path.exists(p1_name):
                 os.remove(p1_name)

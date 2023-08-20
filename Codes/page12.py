@@ -10,7 +10,7 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.screenmanager import Screen, ScreenManager, FadeTransition
 from PyPDF2 import PdfFileMerger 
 import os
-from Additionals import result_page, file_page, transcript_page
+from Codes import result_page, file_page, transcript_page
 
 
 class TwelvethPage(Screen):

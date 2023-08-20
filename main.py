@@ -8,7 +8,7 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.screenmanager import Screen, ScreenManager, FadeTransition
-from Additionals import page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12
+from Codes import page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12
 
 
 class ScreenManagement(ScreenManager):

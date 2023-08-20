@@ -6,7 +6,7 @@ import PyPDF2
 
 def intro_file(inst, exam, clss, sec):
 
-    f=open('E:/Programming/Special/MakeResult/Additionals/result_sheet1.html', 'w')
+    f=open('Additionals/result_sheet1.html', 'w')
 
     f.write('''
 <html>
@@ -59,7 +59,7 @@ def result_file(demo, number_of_students,  _start, total, page_no, choose):
 
     if choose!=1:
 
-        page_name='E:/Programming/Special/MakeResult/Additionals/result_sheet'+str(page_no)+'.html'
+        page_name='Additionals/result_sheet'+str(page_no)+'.html'
         f=open(page_name, 'w')
 
         f.write('''
@@ -69,7 +69,7 @@ def result_file(demo, number_of_students,  _start, total, page_no, choose):
     ''')
 
     else:
-        page_name='E:/Programming/Special/MakeResult/Additionals/result_sheet1.html'
+        page_name='Additionals/result_sheet1.html'
         f=open(page_name, 'a')
 
     f.write('''
@@ -166,8 +166,8 @@ def result_file(demo, number_of_students,  _start, total, page_no, choose):
     for i in range(len(total_pages)):
         if total_pages[i]>number_of_students:
 
-            p_name='E:/Programming/Special/MakeResult/Additionals/result_sheet'+str(i+1)+'.html'
-            pg_name='E:/Programming/Special/MakeResult/Outputs/Result Sheet '+str(i+1)+'.pdf'
+            p_name='Additionals/result_sheet'+str(i+1)+'.html'
+            pg_name='Outputs/Result Sheet '+str(i+1)+'.pdf'
 
             if os.path.exists(p_name):
                 os.remove(p_name)
@@ -175,7 +175,7 @@ def result_file(demo, number_of_students,  _start, total, page_no, choose):
             if os.path.exists(pg_name):
                 os.remove(pg_name)
 
-    page_name='E:/Programming/Special/MakeResult/Additionals/result_sheet'+str(page_no)+'.html'
-    PageName='E:/Programming/Special/MakeResult/Outputs/Result Sheet '+str(page_no)+'.pdf'
+    page_name='Additionals/result_sheet'+str(page_no)+'.html'
+    PageName='Outputs/Result Sheet '+str(page_no)+'.pdf'
 
     pdf.from_file(page_name, PageName)
