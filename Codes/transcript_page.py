@@ -1,7 +1,7 @@
 #BISMILLAHIR RAHMANIR RAHIM
 
 import os
-import pdfkit as pdf
+import pdfkit
 import PyPDF2 
 
 def transcript_file(inst, exam, clss, sec, demo, number_of_students, subject_name, net_mark):
@@ -314,12 +314,17 @@ def transcript_file(inst, exam, clss, sec, demo, number_of_students, subject_nam
 
             f.close()
 
+            wkhtmltopdf_path = r"C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe"
+
+            # Configuration with the wkhtmltopdf executable path
+            config = pdfkit.configuration(wkhtmltopdf=wkhtmltopdf_path)     
+
             page_name='Outputs/Roll '+str(i+1)+'.pdf'
 
             if os.path.exists(page_name):
                 os.remove(page_name)
 
-            pdf.from_file(page, page_name)
+            pdfkit.from_file(page, page_name, configuration=config)
 
 
         for i in range(number_of_students, 200):
