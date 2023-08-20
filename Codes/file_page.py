@@ -1,7 +1,7 @@
 #BISMILLAHIR RAHMANIR RAHIM
 
 import os
-import pdfkit as pdf
+import pdfkit
 import PyPDF2 
 
 def intro_file(inst, exam, clss, sec):
@@ -175,7 +175,12 @@ def result_file(demo, number_of_students,  _start, total, page_no, choose):
             if os.path.exists(pg_name):
                 os.remove(pg_name)
 
+    wkhtmltopdf_path = r"C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe"
+
+    # Configuration with the wkhtmltopdf executable path
+    config = pdfkit.configuration(wkhtmltopdf=wkhtmltopdf_path)
+
     page_name='Additionals/result_sheet'+str(page_no)+'.html'
     PageName='Outputs/Result Sheet '+str(page_no)+'.pdf'
 
-    pdf.from_file(page_name, PageName)
+    pdfkit.from_file(page_name, PageName, configuration=config)
