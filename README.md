@@ -1,4 +1,4 @@
-# MakeResult
+# MakeResult - School Result Management
 
 ## Overview
 
