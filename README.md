@@ -1,4 +1,4 @@
-# MakeResult - School Result Management
+# MakeResult - A School Result Management System
 
 ## Overview
 
