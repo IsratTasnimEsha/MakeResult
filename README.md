@@ -101,4 +101,6 @@ If you would like to contribute to the MakeResult App, please follow these guide
 
 ## Author
 
-Israt Tasnim Esha
+**Israt Tasnim Esha**  
+*Department of Computer Science and Engineering*  
+*Khulna University of Engineering and Technology*
