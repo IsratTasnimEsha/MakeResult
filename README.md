@@ -99,6 +99,10 @@ If you would like to contribute to the MakeResult App, please follow these guide
 - Ensure your code adheres to the existing coding style and conventions.
 - Submit a pull request with a clear description of your changes.
 
+## Contact
+
+I'm here to assist you on your journey with the MakeResult - A School Result Management System. If you need help or want to share feedback, feel free to reach out to me at [israttasnimesha1046@gmail.com](mailto:israttasnimesha1046@gmail.com).
+
 ## Author
 
 **Israt Tasnim Esha**  
