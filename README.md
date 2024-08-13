@@ -106,4 +106,4 @@ I'm here to assist you on your journey with the MakeResult - A School Result Man
 ## Author
 
 **Israt Tasnim Esha**  
-**Time: 2021**  
+**Year:** 2021  
