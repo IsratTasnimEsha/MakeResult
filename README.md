@@ -106,5 +106,4 @@ I'm here to assist you on your journey with the MakeResult - A School Result Man
 ## Author
 
 **Israt Tasnim Esha**  
-*Department of Computer Science and Engineering*  
-*Khulna University of Engineering and Technology*
+**Time: 2021**  
